@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_black"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Add User"
+                android:textAppearance="@style/AppTheme"
+                android:textColor="@color/custom_yellow"
+                android:textSize="@dimen/heading"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boader_radius_round_less"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textAppearance="@style/AppTheme"
+                    android:textColor="@color/custom_black"
+                    android:textColorHint="@color/color_chooser_gray"
+                    android:textSize="@dimen/hint_text" />
+
+                <EditText
+                    android:id="@+id/Second_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boader_radius_round_less"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_black"
+                    android:textColorHint="@color/color_chooser_gray"
+                    android:textSize="@dimen/hint_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boader_radius_round_less"
+                    android:hint="Enter User E-Mail"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_black"
+                    android:textColorHint="@color/color_chooser_gray"
+                    android:textSize="@dimen/hint_text" />
+
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boader_radius_round_less"
+                    android:hint="Enter Contact Number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_black"
+                    android:textColorHint="@color/color_chooser_gray"
+                    android:textSize="@dimen/hint_text" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SelectUser"
+                    android:layout_marginTop="20dp">
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/group"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/normal_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/color_chooser_white"
+                            android:text="Make Normal User"
+                            android:textColor="@color/custom_yellow" />
+
+                        <RadioButton
+                            android:id="@+id/Admin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/color_chooser_white"
+                            android:text="Admin"
+                            android:textColor="@color/custom_yellow" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/boader_radius_round_yellow"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:id="@+id/selectProject"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+
+                        android:background="@drawable/ripple"
+                        android:padding="10dp"
+                        android:stateListAnimator="@drawable/red"
+                        android:text="Select Projects For User "
+                        android:textAppearance="@style/Theme.AppCompat"
+                        android:textColor="@color/color_chooser_white"
+                        android:textColorHint="@color/color_chooser_gray"
+                        android:textSize="@dimen/buttontext"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/createUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/boader_radius_round_yellow"
+                    android:padding="10dp"
+                    android:text="Create User"
+                    android:textAppearance="@style/Theme.AppCompat"
+                    android:textColor="@color/color_chooser_white"
+                    android:textColorHint="@color/color_chooser_gray"
+                    android:textSize="@dimen/buttontext"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

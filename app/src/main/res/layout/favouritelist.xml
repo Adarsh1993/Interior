@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Favourites"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boader_four_side">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:text="Captured Image Time"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/color_chooser_gray"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boader_four_side">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:text="Added Time"
+                android:gravity="center"
+                android:textColor="@color/color_chooser_gray"
+                android:padding="5dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boader_four_side">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:text="Image"
+                android:gravity="center"
+                android:textColor="@color/color_chooser_gray"
+                android:padding="5dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:id="@+id/list"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>

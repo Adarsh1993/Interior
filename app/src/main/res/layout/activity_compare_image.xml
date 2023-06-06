@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainnav"
+
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_chooser_white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="150dp"
+        android:gravity="right">
+
+        <include layout="@layout/customize_after" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+
+        android:layout_height="match_parent">
+
+
+
+        <!--<com.github.developer__.BeforeAfterSlider-->
+            <!--android:id="@+id/mySlider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:importantForAutofill="auto"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:animateLayoutChanges="true"-->
+            <!--android:layout_toRightOf="@+id/privious"-->
+            <!--app:slider_thumb="@mipmap/white_circle"-->
+            <!--/>-->
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginRight="150dp"
+        android:gravity="left">
+
+        <include
+            layout="@layout/custmizieimage_before"
+             />
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

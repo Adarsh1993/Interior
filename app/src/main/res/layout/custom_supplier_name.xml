@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/close"
+        android:id="@+id/close"
+        app:tint="@color/custom_yellow"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Supplier Name.*"
+        android:textColor="@color/custom_yellow" />
+
+    <EditText
+        android:id="@+id/dc_number"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_spinner"
+        android:hint="Supplier Name*"
+        android:imeOptions="actionNext"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/custom_black"
+        android:textColorHint="@color/color_chooser_gray" />
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/custom_yellow"
+        android:layout_marginTop="50dp"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Sumbit" />
+
+</LinearLayout>

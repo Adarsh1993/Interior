@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/custom_yellow</item>
+        <item name="colorPrimaryDark">@color/custom_yellow</item>
+        <item name="colorControlNormal">@color/custom_grey</item>
+        <item name="colorControlActivated">@color/custom_yellow</item>
+        <item name="colorControlHighlight">@color/custom_yellow</item>
+
+
+        <item name="android:colorAccent">#fff</item>
+
+        <item name="android:statusBarColor">@color/custom_yellow</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+</resources>

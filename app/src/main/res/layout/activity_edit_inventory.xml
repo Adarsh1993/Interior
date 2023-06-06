@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_black"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lin">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="New Material Heading"
+                android:textColor="@color/custom_yellow" />
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="Select heading"
+                android:paddingLeft="5dp"
+                android:textColor="@color/custom_black"
+                android:textSize="16sp"
+                tools:text="Qwerty" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:text="New Sub-Heading"
+                android:textColor="@color/custom_yellow" />
+
+            <TextView
+                android:id="@+id/material_sub_heading"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="Select Material Sub heading"
+                android:paddingLeft="5dp"
+                android:textColor="@color/custom_black"
+                android:textSize="16sp"
+                tools:text="Qwerty" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="New Material"
+                android:textColor="@color/custom_yellow" />
+
+            <TextView
+                android:id="@+id/material_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="Select material Name"
+                android:paddingLeft="5dp"
+                android:textColor="@color/custom_black"
+                android:textSize="16sp"
+                tools:text="Qwerty" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Dc/weight slip*"
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/dc_number"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="DC No.*"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/custom_black" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Purchase Order No."
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/purchase_order_number"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Purchase Order No."
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/custom_black" />
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Vehicle No."
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/vehicle_no"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Vehicle No.*"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/custom_black" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Name of supplier*"
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/supplier"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Name of supplier*"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/custom_black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Item Description"
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Item Description"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/custom_black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Quantity*"
+                android:textColor="@color/custom_yellow" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/background_spinner"
+                    android:hint="Quantity*"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:digits="0123456789.-"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_black"
+                    android:textColorHint="@color/custom_black" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:background="@color/white"
+                    android:id="@+id/unit"
+                    android:gravity="center"
+                    android:textColor="@color/custom_black"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Rate"
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/rate"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Rate"
+                android:digits="0123456789.-"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/custom_black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Addition remarks"
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/additional"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Addition remarks"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/custom_black" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/custom_yellow"
+            android:gravity="center"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/add_more_Update"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/custom_yellow"
+            android:gravity="center"
+            android:text="Update and Add More"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

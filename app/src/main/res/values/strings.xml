@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">OpticVyu 360° Monitoring</string>
+    <string name="privacy_policy"><u>Privacy policy</u></string>
+    <string name="terms_of_use"><u>Terms of use</u></string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="progress_title">Processing..</string>
+
+    <string name="done">Done</string>
+
+
+    <string-array name="tab_titles">
+        <item>Gallery</item>
+    </string-array>
+
+
+    <string name="toolbar_title">Select Images</string>
+    <string name="no_image">No Image</string>
+
+    <string name="selected_image">Selected Image</string>
+
+
+    <string name="max_count_msg">%1$d images selected already</string>
+    <string name="min_count_msg">you have to choice %1$d images</string>
+
+    <string name="default_directory">Pictures</string>
+    <string name="contact_us">Contact us</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="verify">Verify</string>
+    <string name="password">Password</string>
+    <string name="user_id">User ID</string>
+    <string name="TF_authentication">Enter OTP</string>
+    <string name="user_instruction">Capture/Select images from Camera/Gallery.</string>
+    <string name="capture_upload_title">Capture and Upload</string>
+    <string name="Send_Code">Resend OTP</string>
+    <!--<string name="capture_upload_title"><![CDATA[Capturing & Upload]]></string>-->
+
+
+    <!--Resources for Images Editor-->
+    <string name="button_brush">Brush</string>
+    <string name="button_cursor">Cursor</string>
+    <string name="button_ellipse">Circle/Ellipse</string>
+    <string name="button_zoom">Zoom</string>
+    <string name="button_pipette">Pipette</string>
+    <string name="button_undo">Undo</string>
+    <string name="button_redo">Redo</string>
+    <string name="button_stamp">Stamp</string>
+    <string name="button_rectangle">Square/Rectangle</string>
+    <string name="button_import_image">Import Image</string>
+    <string name="button_eraser">Eraser</string>
+    <string name="button_resize">Resize Image</string>
+    <string name="button_flip">Flip</string>
+    <string name="button_fill">Fill</string>
+    <string name="button_move">Move</string>
+    <string name="button_rotate">Rotate</string>
+    <string name="button_line">Line</string>
+    <string name="button_text">Text</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <string name="about_catroid_url_text">About Catrobat</string>
+    <string name="about_link_template" translatable="false">&lt;a href=\"%1$s\">%2$s&lt;/a></string>
+    <string name="about_version">Version:</string>
+    <string name="stroke_title">"Tool Settings"</string>
+    <string name="color_chooser_title">Color Chooser</string>
+    <string name="color_rgb">Red Green Blue (RGB)</string>
+    <string name="color_red">Red</string>
+    <string name="color_green">Green</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_alpha">Alpha</string>
+    <string name="color_pre">preselected</string>
+    <string name="dialog_tools_title">Tools</string>
+    <string name="dialog_save_title">Save Picture</string>
+    <string name="dialog_save_text">Input Filename</string>
+    <string name="dialog_load">Loading&#8230;</string>
+    <string name="dialog_overwrite_text">Overwrite an existing file?</string>
+    <string name="dialog_error_save_title">Error load/save File</string>
+    <string name="dialog_error_sdcard_text">Check Image or SD-Card!</string>
+    <string name="dialog_brush_width_text">Stroke Width</string>
+    <string name="dialog_warning_new_image">Save Changes?</string>
+    <string name="help_title">Help</string>
+    <string name="help_content_ellipse">Move and resize the circle or transform it to an ellipse. Tap to paint the shape on the image</string>
+    <string name="help_content_flip">Tap on the symbols on the bottom bar to flip the image.</string>
+    <string name="help_content_eraser">Remove parts of the image like with an eraser.</string>
+    <string name="help_content_move">Use your finger to move the image around.</string>
+    <string name="help_content_zoom">Tap on the symbols on the bottom bar to zoom in or zoom out.</string>
+    <string name="help_content_brush">Tap on the symbols on the bottom bar to change the color or the brush size.</string>
+    <string name="help_content_eyedropper">Tap on the image to select a color.</string>
+    <string name="help_content_undo">Tap to undo your previous action.</string>
+    <string name="help_content_redo">Tap to redo an undone action.</string>
+    <string name="help_content_fill">Tap on the image to fill an area with the selected color.</string>
+    <string name="help_content_cursor">Position the cursor where you want to draw. Tap to activate the cursor. Move your finger to draw. Tap again to deactivate.</string>
+    <string name="help_content_resize">Use to resize the image.</string>
+    <string name="help_content_stamp">Move and resize the rectangle to cover the area you want to stamp. Tap to select the area. Move and Tap again to stamp.</string>
+    <string name="help_content_rectangle">Move and resize the square or transform it to a rectangle. Tap to paint the shape on the image.</string>
+    <string name="help_content_import_png">Import an image from the gallery to the stamp tool.</string>
+    <string name="help_content_rotate">Tap on the buttons to rotate the image left or right.</string>
+    <string name="help_content_line">Draw a straight line.</string>
+    <string name="help_content_text">Write text and format it. Resize the text box afterwards. Tap to insert the text on the image.</string>
+    <string name="closing_security_question_title">Quit</string>
+    <string name="closing_security_question">Save Changes?</string>
+    <string name="closing_catroid_security_question_title"><![CDATA[Back to Capturing & Upload]]></string>
+    <string name="menu_new_image">New image</string>
+    <string name="menu_load_image">Load image</string>
+    <string name="menu_save_image">Save image</string>
+    <string name="menu_save_copy">Save copy</string>
+    <string name="menu_new_image_empty_image">Empty Image</string>
+    <string name="menu_item_tools">Tools menu</string>
+    <string name="menu_hide_menu">Fullscreen</string>
+    <string name="menu_new_image_from_camera">New image from camera</string>
+
+    <string name="menu_terms_of_use_and_service">Terms of Use</string>
+    <string name="more">More</string>
+
+    <string name="menu_about">About</string>
+    <string name="menu_back">@string/closing_catroid_security_question_title</string>
+    <string name="menu_export">Export</string>
+    <string name="saved">Image saved</string>
+    <string name="copy">Copy saved</string>
+    <string name="menu_quit">Quit</string>
+    <string name="save_button_text">Save</string>
+    <string name="discard_button_text">Discard</string>
+
+    <string name="resize_to_resize_tap_text">to resize tap</string>
+    <string name="resize_nothing_to_resize">nothing to resize</string>
+    <string name="resize_max_image_resolution_reached">max image resolution reached</string>
+
+    <string name="text_tool_dialog_title">Text Tool settings</string>
+    <string name="text_tool_dialog_input_title">Your text:</string>
+    <string name="text_tool_dialog_format_options">Format options:</string>
+    <string name="text_tool_dialog_underline_shortcut">U</string>
+    <string name="text_tool_dialog_italic_shortcut">I</string>
+    <string name="text_tool_dialog_bold_shortcut">B</string>
+    <string name="text_tool_dialog_input_hint">Tap here to write</string>
+
+    <!-- Extras -->
+    <!-- Return to Catroid -->
+    <string name="temp_picture_name" translatable="false">catroidTemp</string>
+
+    <string name="dialog_unallowed_chars_title">Unallowed Character(s)</string>
+    <string name="dialog_unallowed_chars_text">Only letters, numbers and \'_\' allowed.</string>
+    <string name="dialog_shape_text">Shape</string>
+    <string name="dialog_loading_image_failed_title">Error on loading image</string>
+    <string name="dialog_loading_image_failed_text">Not a valid image file</string>
+    <string name="image_path">imagePath</string>
+    <string name="processing_message">Processing</string>
+    <string name="connectivity_error_message">Please make sure your device has an internet connection.</string>
+    <string name="local_error_message">Please make sure your device has an internet connection to load the current drawing data</string>
+    <string name="monitor_access">This project is not enabled for 360򹮸 monitoring. Please contact admin@opticvyu.com.</string>
+    <string name="ActiveInternet">Please connect to an active internet connection.</string>
+    <string name="clear">When clicked "Do you want to delete the existing images placed in the mobile directory /Internal Memory/Documents/Opticvyu_images ?"</string>
+
+    <!--..............My String...........................-->
+    <string name="Dashbord_image_not_yet">No images captured in last two days. Please report to us at admin@opticvyu.com</string>
+    <string name="Scheduler_email">Enter multiple email ids separated by comma e.g abc1@xyz ,abc2@xyz.com</string>
+
+    <string name="ChangePassword">Change Password</string>
+    <string name="AddUser">Add User</string>
+    <string name="UserList">User List</string>
+    <string name="EmailScheduler">Email Scheduler</string>
+    <string name="SiteStatus">Site Status</string>
+    <string name="CameraInfo">Camera Info</string>
+    <string name="CustomTimelapse">Custom Timelapse</string>
+    <string name="CompareImage">Compare Image</string>
+    <string name="Report">Report</string>
+
+    <string name="ContactUs">Contact Us</string>
+    <string name="Website">Website</string>
+    <string name="walk">Walkthrough</string>
+    <string name="Refresh">Refresh Drawing</string>
+    <string name="dashboard">Construction Camera</string>
+
+    <string name="Dashboard">Dashboard</string>
+    <string name="UploadsPhotosFromMobile">Uploads Photos From Mobile</string>
+    <string name="FavouriteList">Favourite List</string>
+    <string name="TimeLapseVideo">Time Lapse Video</string>
+    <string name="EventTagging">Event Tagging</string>
+    <string name="SplitScreen">Split Screen</string>
+    <string name="RequestLiveImage">Request Live Image</string>
+    <string name="Setting">Setting</string>
+    <string name="Logout">Logout</string>
+    <string name="insta_360">Insta 360</string>
+    <string name="richo_360">Richo 360</string>
+    <string name="Cache">Clear Cache</string>
+
+
+    // Inventry
+    <string name="material_heading_id">material_heading_id</string>
+    <string name="material_name">material_name</string>
+    <string name="material_name_id">material_name_id</string>
+    <string name="material_heading">material_heading</string>
+    <string name="sub_heading_id">sub_heading_id</string>
+    <string name="sub_heading">sub_heading</string>
+    <string name="dc_no">dc_no</string>
+    <string name="vehicle_no">vehicle_no</string>
+    <string name="supplier_name">supplier_name</string>
+    <string name="Description">desc</string>
+    <string name="quantity">quantity</string>
+    <string name="rate">rate</string>
+    <string name="Remark">remark</string>
+    <string name="status">status</string>
+    <string name="entry_id">entry_id</string>
+    <string name="entry">entry</string>
+    <string name="id">id</string>
+    <string name="assests_type">asset_type</string>
+    <string name="MoreInventry">Add more same inventory</string>
+    <string name="unit">unit</string>
+    <string name="purchase_order_number">purchase_order_number</string>
+    <string name="InventreyStatus">InventryStatus</string>
+    <string name="pending">pending</string>
+    <string name="lat">lat</string>
+    <string name="contactNo">contactNo</string>
+    <string name="log">long</string>
+    <string name="ProjectID">projectid</string>
+    <string name="imagepath">imagepath</string>
+    <string name="PRJCT">PRJCT</string>
+    <string name="base64">data:image/gif;base64,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</string>
+    <string name="Link">https://play.google.com/store/apps/details?id=com.main.Lite</string>
+
+    <string name="alert_option">Your project is granted free access. Please use OpticVyu web-application for accessing feeds. \n\n</string>
+    <string name="captureNotification">1. Connect Ricoh-theta or Insta360 through Wifi. </string>
+    <string name="ins">2. Visit the strategic point\'s location on site &amp; click on the yellow points to capture 360° images </string>
+    <string name="IMP">Imp: Alert</string>
+    <string name="uploadingNotification">1. Upload the captured images?</string>
+    <string name="normalNotification">1. Visit the strategic point\'s location on site &amp; click on the yellow points to capture plain images</string>
+    <string name="CaptureImages"> The image has been processed, go back and capture at another location</string>
+    <string name="Normal_Image_Selection">N</string>
+    <string name="RICOH_Image">R</string>
+    <string name="INSTA_Image">R</string>
+    <string name="walkThrough_point">This is a 360° walkthrough point. Please create a walkthrough video &amp; upload through web-dashboard</string>
+
+</resources>

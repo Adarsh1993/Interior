@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_black"
+    android:gravity="right">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boader_radius_round_less"
+                android:hint="@string/Scheduler_email"
+                android:padding="10dp"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/custom_txt_midiumgray"
+                android:textSize="@dimen/hint_text" />
+
+            <EditText
+                android:id="@+id/Subject"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/boader_radius_round_less"
+                android:hint="This is My simple subject"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/custom_txt_midiumgray"
+                android:textSize="@dimen/hint_text" />
+
+            <EditText
+                android:id="@+id/body"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/boader_radius_round_less"
+                android:hint="Enter Body"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/custom_txt_midiumgray"
+                android:textSize="@dimen/hint_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:text="Select Days"
+                android:textColor="@color/custom_yellow"
+                android:textSize="@dimen/heading" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <CheckBox
+                    android:id="@+id/mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mon" />
+
+                <CheckBox
+                    android:id="@+id/tues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tue" />
+
+                <CheckBox
+                    android:id="@+id/wed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wed" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/thrus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Thu" />
+
+                <CheckBox
+                    android:id="@+id/fri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fri" />
+
+                <CheckBox
+                    android:id="@+id/sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fri" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Sun" />
+
+                <Button
+                    android:id="@+id/everyday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boader_radius_round_yellow"
+                    android:text="Every Day"
+                    android:textColor="@color/custom_black"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/unclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boader_radius_round_yellow"
+                    android:text="Uncheck All"
+                    android:textColor="@color/custom_black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/hour"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/boader_radius_round_less"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/hou"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:drawableRight="@drawable/dropdown"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/custom_black"
+                    android:textStyle="normal">
+
+                </TextView>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="@color/custom_yellow" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:gravity="center"
+
+                    android:text="HH"
+                    android:textColor="@color/custom_black"
+                    android:textSize="@dimen/hint_text" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="@color/custom_yellow" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/custom_black"
+                    android:textSize="@dimen/hint_text" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="@color/custom_yellow" />
+
+                <TextView
+                    android:id="@+id/minute"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.05"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/custom_black"
+                    android:textSize="@dimen/hint_text" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="@color/custom_yellow" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:gravity="center"
+                    android:text="MM"
+                    android:textColor="@color/custom_black"
+                    android:textSize="@dimen/hint_text" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Sumbit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/boader_radius_round_yellow"
+                android:padding="10dp"
+                android:text="Submit"
+                android:textColor="@color/color_chooser_white"
+                android:textSize="@dimen/buttontext"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

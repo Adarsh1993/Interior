@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text_camera_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.ricoh.view.MJpegView
+        android:id="@+id/live_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+
+    <LinearLayout
+        android:id="@+id/shoot_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/btn_shoot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_purple_gradient"
+            android:text="@string/label_btn_shoot"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/camera_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/refreshPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_refresh_black_24dp"
+            app:tint="@color/custom_yellow" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/object_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="@dimen/list_divider_height" />
+
+
+    </FrameLayout>
+
+    <com.ricoh.view.LogView
+        android:id="@+id/log_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:visibility="gone" />
+
+
+</LinearLayout>

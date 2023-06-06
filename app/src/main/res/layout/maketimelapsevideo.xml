@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_black"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/recurring_timelapse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/custom_yellow"
+                        android:text="Recurring Timelapse"
+                        android:textColor="@color/custom_yellow"
+                        android:textSize="@dimen/buttontext"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/grouplayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/radiogroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/four"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Last one days" />
+                            <RadioButton
+                                android:id="@+id/first"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Last 7 Days" />
+
+                            <RadioButton
+                                android:id="@+id/second"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Last 15 days" />
+
+                            <RadioButton
+                                android:id="@+id/third"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Last one month" />
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/timelapse_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/custom_yellow"
+                        android:text="One Time- Timelapse"
+                        android:textColor="@color/custom_yellow"
+                        android:textSize="@dimen/buttontext"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/date_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical"
+                        android:paddingRight="30dp">
+
+                        <TextView
+                            android:id="@+id/start_date"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/boader_radius_round_less"
+                            android:drawableLeft="@drawable/date_range"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="Select start Date"
+                            android:inputType="date"
+                            android:padding="5dp"
+                            android:singleLine="false"
+                            android:textColor="@color/custom_txt_midiumgray"
+                            android:textColorHint="@color/custom_txt_midiumgray" />
+
+                        <TextView
+                            android:id="@+id/end_date"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/boader_radius_round_less"
+                            android:drawableLeft="@drawable/date_range"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="Select End Date"
+                            android:inputType="date"
+                            android:padding="5dp"
+                            android:singleLine="false"
+                            android:textColor="@color/custom_txt_midiumgray"
+                            android:textColorHint="@color/custom_txt_midiumgray" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/custom_yellow"
+                    android:text="Start time"
+                    android:textColor="@color/custom_yellow"
+                    android:textSize="@dimen/buttontext"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/boader_radius_round_less"
+                    android:drawableLeft="@drawable/time_range"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="Select start time"
+                    android:inputType="date"
+                    android:padding="5dp"
+                    android:singleLine="false"
+                    android:textColor="@color/custom_txt_midiumgray"
+                    android:textColorHint="@color/custom_txt_midiumgray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/custom_yellow"
+                    android:text="End time"
+                    android:textColor="@color/custom_yellow"
+                    android:textSize="@dimen/buttontext"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/end_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/boader_radius_round_less"
+                    android:drawableLeft="@drawable/time_range"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="Select End time"
+                    android:inputType="date"
+                    android:padding="5dp"
+                    android:singleLine="false"
+                    android:textColor="@color/custom_txt_midiumgray"
+                    android:textColorHint="@color/custom_txt_midiumgray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boader_radius_round_less"
+                        android:drawableRight="@drawable/dropdown"
+                        android:gravity="center_vertical"
+                        android:hint="Select Timelapse Speed"
+                        android:padding="5dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/custom_txt_midiumgray"
+                        android:textColorHint="@color/custom_txt_midiumgray" />
+
+                    <TextView
+                        android:id="@+id/quality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boader_radius_round_less"
+                        android:drawableRight="@drawable/dropdown"
+                        android:gravity="center_vertical"
+                        android:hint="Select Timelapse Quality"
+                        android:padding="5dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/custom_txt_midiumgray"
+                        android:textColorHint="@color/custom_txt_midiumgray" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/boader_radius_round_yellow"
+                    android:padding="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Schedule Timelapse"
+                    android:textColor="@color/color_chooser_white"
+                    android:textSize="@dimen/buttontext"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/boader_radius_round_yellow"
+                    android:padding="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Reset"
+                    android:textColor="@color/color_chooser_white"
+                    android:textSize="@dimen/buttontext"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

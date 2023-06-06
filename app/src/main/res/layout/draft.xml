@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cons"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/media_image"
+        android:layout_width="match_parent"
+        app:cardElevation="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardBackgroundColor="@color/custom_grey"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/entry_name"
+                        android:text="Sand River"
+                        android:textSize="18sp"
+                        android:typeface="normal"
+                        android:textColor="@color/custom_black"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|end"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/custom_black"
+                        android:textSize="14sp"
+                        android:typeface="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:src="@drawable/delete"
+                        android:layout_width="30dp"
+                        android:id="@+id/delete_draft"
+                        app:tint="@color/custom_yellow"
+                        android:padding="5dp"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:id="@+id/code"
+                        android:layout_width="wrap_content"
+                        android:textSize="15sp"
+                        android:gravity="right"
+                        android:maxLength="16"
+                        android:typeface="normal"
+                        android:textColor="@color/custom_black"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

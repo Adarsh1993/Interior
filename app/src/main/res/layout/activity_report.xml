@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_black"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/instant"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Instant Report"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:background="@color/color_chooser_yellow" />
+
+                    <TextView
+                        android:id="@+id/schedule"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Schedule Report"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/instant_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/instant_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/starttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boader_radius_round_less"
+                        android:gravity="center"
+                        android:hint="Start"
+                        android:inputType="datetime"
+                        android:minWidth="100dp"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textAppearance="@style/AppTheme"
+                        android:textColor="@color/custom_black"
+                        android:textColorHint="@color/color_chooser_gray"
+                        android:textSize="@dimen/hint_text" />
+
+
+                    <TextView
+                        android:id="@+id/endtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boader_radius_round_less"
+                        android:gravity="center"
+                        android:hint="End"
+                        android:inputType="datetime"
+                        android:minWidth="100dp"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textAppearance="@style/AppTheme"
+                        android:textColor="@color/custom_black"
+                        android:textColorHint="@color/color_chooser_gray"
+                        android:textSize="@dimen/hint_text" />
+
+
+                    <TextView
+                        android:id="@+id/preview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boader_radius_round_yellow"
+                        android:gravity="center"
+                        android:inputType="datetime"
+                        android:minWidth="100dp"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:text="Preview"
+                        android:textAppearance="@style/AppTheme"
+                        android:textColor="@color/color_chooser_white"
+                        android:textColorHint="@color/color_chooser_gray"
+                        android:textSize="@dimen/hint_text" />
+
+
+                    <TextView
+                        android:id="@+id/generate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boader_radius_round_yellow"
+                        android:gravity="center"
+                        android:inputType="datetime"
+                        android:minWidth="100dp"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:text="Genrate PDF"
+                        android:textAppearance="@style/AppTheme"
+                        android:textColor="@color/color_chooser_white"
+                        android:textColorHint="@color/color_chooser_gray"
+                        android:textSize="@dimen/hint_text" />
+
+
+                    <TextView
+                        android:id="@+id/mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boader_radius_round_yellow"
+                        android:gravity="center"
+                        android:inputType="datetime"
+                        android:minWidth="100dp"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:text="Mail PDF"
+                        android:textAppearance="@style/AppTheme"
+                        android:textColor="@color/color_chooser_white"
+                        android:textColorHint="@color/color_chooser_gray"
+                        android:textSize="@dimen/hint_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/preview_option"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/first_image"
+                                android:layout_width="400dp"
+                                android:layout_height="350dp"
+                                android:adjustViewBounds="true"
+                                android:background="@color/transparent"
+                                android:fitsSystemWindows="true"
+                                android:scaleType="fitXY" />
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="350dp"
+                            android:background="@color/custom_yellow" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/second_image"
+                                android:layout_width="400dp"
+                                android:layout_height="350dp"
+                                android:adjustViewBounds="true"
+                                android:background="@color/dialog_edittext_color_hint"
+                                android:fitsSystemWindows="true"
+                                android:scaleType="fitXY" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/schedule_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+          >
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="Report Type"
+                        android:textColor="@color/custom_yellow"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/report_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <RadioButton
+                            android:id="@+id/weekly"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Weekly Progress Report"
+                            android:textColor="@color/custom_yellow"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/bi_weekly"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bi-Weekly Progress Report"
+                            android:textColor="@color/custom_yellow"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/monthly"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Monthly Progress Report"
+                            android:textColor="@color/custom_yellow"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+
+
+                    <LinearLayout
+                        android:id="@+id/camera_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="serif"
+                        android:text="Email*"
+                        android:textColor="@color/custom_yellow"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/boader_four_side"
+                        android:gravity="top"
+                        android:hint="Enter Comma separated email ids"
+                        android:minHeight="60dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/schedule_report"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/boader_radius_round_yellow"
+                            android:gravity="center"
+                            android:inputType="datetime"
+                            android:minWidth="100dp"
+                            android:padding="8dp"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="Schedule email Report"
+                            android:textAppearance="@style/AppTheme"
+                            android:textColor="@color/color_chooser_white"
+                            android:textColorHint="@color/color_chooser_gray"
+                            android:textSize="@dimen/hint_text" />
+
+                        <TextView
+                            android:id="@+id/reset_schedule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/boader_radius_round_yellow"
+                            android:gravity="center"
+                            android:inputType="datetime"
+                            android:minWidth="100dp"
+                            android:padding="8dp"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="Reset Schedule"
+                            android:textAppearance="@style/AppTheme"
+                            android:textColor="@color/color_chooser_white"
+                            android:textColorHint="@color/color_chooser_gray"
+                            android:textSize="@dimen/hint_text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="150dp"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ImageArchive"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center" />
+
+            <ListView
+                android:id="@+id/timeShow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1.7"
+                android:scrollbars="none">
+
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="50dp"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+
+                <CalendarView
+                    android:id="@+id/calender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dateTextAppearance="@style/CalenderViewDateCustomText"
+                    android:fitsSystemWindows="true"
+                    android:theme="@style/CalenderViewCustom"
+                    android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"></CalendarView>
+
+
+
+                <TextView
+                    android:id="@+id/GetImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/custom_yellow"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Get Image"
+                    android:textColor="@color/color_chooser_white"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

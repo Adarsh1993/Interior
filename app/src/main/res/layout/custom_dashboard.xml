@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.15">
+
+            <ImageView
+                android:id="@+id/upimgid"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/menu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15">
+
+            <ImageView
+                android:id="@+id/action_logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.62"
+            android:background="@drawable/boader_spinner"
+            android:gravity="left">
+
+            <Spinner
+                android:id="@+id/project_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:popupBackground="@color/color_chooser_white"
+                android:singleLine="true"
+                android:textSize="@dimen/action_bar_dropdown_size"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/camera_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.02"
+            android:background="@drawable/boader_spinner">
+
+            <Spinner
+                android:id="@+id/camera"
+
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:popupBackground="@color/color_chooser_white"
+                android:singleLine="true"
+                android:text="Cam1"
+                android:textColor="@color/custom_black"
+                android:textSize="@dimen/action_bar_dropdown_size"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/panatitlt"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.07"
+              android:gravity="center"
+            android:orientation="vertical"
+           >
+
+            <Spinner
+                android:id="@+id/degree"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:popupBackground="@color/color_chooser_white"
+                android:singleLine="true"
+                android:text="Angle"
+                android:visibility="gone"
+                android:textColor="@color/custom_black"
+                android:textSize="@dimen/action_bar_dropdown_size"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/live"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@drawable/ic_refresh_black_24dp"
+                app:tint="@color/custom_yellow"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

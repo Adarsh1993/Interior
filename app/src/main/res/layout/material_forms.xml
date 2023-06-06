@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_black"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="New Material Heading"
+                android:textColor="@color/custom_yellow" />
+
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:text="New Sub-Heading"
+                android:textColor="@color/custom_yellow" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/material_sub_heading"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="New Material"
+                android:textColor="@color/custom_yellow" />
+
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/material_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Dc/weight slip*"
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/dc_number"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="DC No.*"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/color_chooser_gray" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Purchase Order No"
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/purchase_order_number"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Purchase Order Number"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/color_chooser_gray" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Vehicle No.*"
+                android:textColor="@color/custom_yellow" />
+
+
+            <EditText
+                android:id="@+id/vehicle_no"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Vehicle No.*"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/color_chooser_gray" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Name of supplier*"
+                android:textColor="@color/custom_yellow" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/supplier"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:autofillHints="Heading"
+                    android:background="@drawable/background_spinner"
+                    android:paddingLeft="5dp"
+                    android:popupBackground="@color/color_chooser_white"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/supplier_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/background_spinner"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_black"
+                    android:textColorHint="@color/color_chooser_gray"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Item Description"
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Item Description"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/color_chooser_gray" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Quantity*"
+                android:textColor="@color/custom_yellow" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_spinner"
+                    android:digits="0123456789.-"
+                    android:hint="Quantity*"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_black"
+                    android:textColorHint="@color/color_chooser_gray" />
+
+                <TextView
+                    android:id="@+id/units"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/custom_black" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Rate"
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/rate"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Rate"
+                android:digits="0123456789.-"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/color_chooser_gray" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Addition remarks"
+                android:textColor="@color/custom_yellow" />
+
+            <EditText
+                android:id="@+id/additional"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_spinner"
+                android:hint="Addition remarks"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/color_chooser_gray" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/custom_yellow"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="Submit and add more"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="Submit and Capture"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

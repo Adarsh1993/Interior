@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="#33ffffff">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+
+    <CheckBox
+        android:id="@+id/checkboxView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+   <com.optic.opticvyu.customviews.CircularProgressView
+        android:id="@+id/circularProgressView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:background="#66000000"
+        app:arc_margin="6dp"
+        app:arc_width="4dp" />
+
+    <ImageView
+        android:id="@+id/tikImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_action_done"
+        app:tint="@color/custom_yellow" />
+
+    <ImageView
+        android:id="@+id/errorImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_action_error" />
+</RelativeLayout>
